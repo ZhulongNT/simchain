@@ -554,13 +554,15 @@ def verify(sig,G,K,message):
 
 #######Try all possibilities
 
-from time import clock
+# from time import clock
+# DEPRECIATED since python 3.8
+from time import perf_counter
 from math import sqrt,ceil
 def crack_by_brute_force(G,K):
-    start_time = clock()
+    start_time = perf_counter()
     for k in range(G.order):
         if k*G == K:
-            end_time = clock()
+            end_time = perf_counter()
             print ("Priv key: k = " + str(k))
             print ("Time: " + str(round(end_time - start_time, 3)) + " secs")
             
