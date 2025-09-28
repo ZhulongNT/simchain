@@ -20,6 +20,10 @@ class Keys(tuple):
     def pk(self):
         return self[1]
     
+    """
+    wallet.py
+    钱包相关实现。
+    """
     def __repr__(self):
         return "keys pair"
     

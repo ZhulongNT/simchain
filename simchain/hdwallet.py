@@ -101,6 +101,11 @@ class Keys:
         assert(0 <= i < MAX_CHILD_NUM)
         assert(self.__depth < 0xff)
 
+        """
+        派生子钱包。
+        :param index: 子钱包索引。
+        :return: 子钱包对象。
+        """
         len_i = orderlen(MAX_CHILD_NUM)
         str_i = number_to_bytes(i,len_i)
 
