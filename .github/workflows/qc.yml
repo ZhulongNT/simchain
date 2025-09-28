@@ -3,6 +3,6 @@ jobs:
   quality-check:
     uses: ZhulongNT/fuck-u-code/.github/workflows/code-quality-analysis.yml@main
     with:
-      language: 'en-US'
+      language: 'zh-CN'
       top-files: 10
       artifact-name: 'code-quality-report'
